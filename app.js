@@ -9,29 +9,32 @@ function adicionarAmigo(){
         //console.log ('Por favor, insira um nome.');
         alert ('Por favor, insira um nome.');
         return;
-    }else {
-        amigos.push(nomeAmigo);
-        console.log(amigos);
-        limparCampo();
-        return nomeAmigo;
     }
+
+    amigos.push(nomeAmigo);
+    limparCampo();
+    return nomeAmigo;
 }
 
 function atualizarLista(){
-       for (let i=0;i<amigos.length;i++){
+    listaAmigos.innerHTML = '';
+
+    for (let i=0;i<amigos.length;i++){
         const item = document.createElement('li');
         item.textContent = amigos[i];
-        nomeAmigo.appendChild(item);
+        listaAmigos.appendChild(item);
     }
 }
 
 function sortearAmigo(){
+    if (amigos.length === 0){
+        alert ('Adicione pelo menos um amigo antes de sortear!');
+        return;
+    }
 
+    let indiceSorteado = Math.floor(Math.random() * amigos.length);
+    let amigoSorteadao = amigos[indiceSorteado];
 }
-
-function gerarNumeroAleatorio(){
-    return parseInt(Math.random() *  + 1);
- }
 
 function limparCampo() {
     nomeAmigo = document.querySelector('input');
