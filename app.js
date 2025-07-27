@@ -34,6 +34,11 @@ function sortearAmigo(){
 
     let indiceSorteado = Math.floor(Math.random() * amigos.length);
     let amigoSorteadao = amigos[indiceSorteado];
+
+    atualizarLista();
+    listaAmigos.children[indiceSorteado].classList.add('amigo-sorteado');
+
+    alert(`Amigo sorteado: ${amigoSorteadao}`);
 }
 
 function limparCampo() {
