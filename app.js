@@ -5,6 +5,11 @@ let input = document.querySelector('input');
 function adicionarAmigo(){
     let nomeAmigo = input.value.trim();
 
+    if (amigos.includes(nomeAmigo)){
+        alert('Este amigo ja foi adicionado');
+        return;
+    }
+
     if (nomeAmigo == ""){
         //console.log ('Por favor, insira um nome.');
         alert ('Por favor, insira um nome.');
@@ -13,6 +18,7 @@ function adicionarAmigo(){
 
     amigos.push(nomeAmigo);
     limparCampo();
+    atualizarLista();
     return nomeAmigo;
 }
 
