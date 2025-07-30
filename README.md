@@ -31,6 +31,8 @@ Este é um pequeno projeto em JavaScript que permite adicionar nomes de amigos e
 
 ## Demonstração
 
-Você pode incorporar esse script em um projeto HTML simples para testar localmente no navegador.
+## Acesse o Projeto Online
+
+🔗 [Clique aqui para testar o sorteador de amigos](https://henriique07.github.io/challenge-amigo-secreto_pt-main/)
 
 Sinta-se à vontade para melhorar ou adaptar este projeto conforme sua necessidade!
